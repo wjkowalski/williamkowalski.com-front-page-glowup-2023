@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Great Ostrich Fiasco - William Kowalski's Website</title>
+    <link rel="stylesheet" href="frontpage-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Kablammo&family=Major+Mono+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="logo">
+                <img src="./images/william-kowalski-ostrich.png">
+            </div>
+            <div id="tagline">
+                <h2 id="fiasco">THE GREAT OSTRICH FIASCO</h2>
+                <h1 id="headline">WILLIAM KOWALSKI'S WEBSITE</h1></div>
+            
+        </div>
+        <div id="content">
+            <div id="buttonHolder">
+                <button 
+                    onmouseover="changeButton(this)" 
+                    onmouseout="restoreButton(this)" 
+                    class="front-page-button" 
+                    id="booksPage" 
+                    onclick="window.location.href='https://williamkowalski.com/books/'">
+                        ALL BOOKS
+                </button>
+                
+                <button 
+                    onmouseover="changeButton(this)" 
+                    onmouseout="restoreButton(this)"
+                    class="front-page-button" 
+                    id="blog" 
+                    onclick="window.location.href='https://williamkowalski.com/blog'">
+                        BLOG
+                </button>
+    
+                <button 
+                    onmouseover="changeButton(this)" 
+                    onmouseout="restoreButton(this)" 
+                    class="front-page-button" 
+                    id="resources" 
+                    onclick="window.location.href='https://williamkowalski.com/on-writing'">
+                        RESOURCES
+                </button>
+                
+                <button 
+                    onmouseover="changeButton(this)" 
+                    onmouseout="restoreButton(this)" 
+                    class="front-page-button" 
+                    id="contactButton" 
+                    onclick="window.location.href='https://williamkowalski.com/contact'">
+                        CONTACT
+                </button>
+    
+                <button 
+                    onmouseover="changeButton(this)" 
+                    onmouseout="restoreButton(this)" 
+                    class="front-page-button" 
+                    id="ostrichButton" 
+                    onClick="showAgain()">
+                    OSTRICH
+                </button>
+                <button 
+                    onmouseover="changeButton(this)" 
+                    onmouseout="restoreButton(this)" 
+                    class="front-page-button" 
+                    id="sideOstrich" 
+                    onClick="showSideOstrich()"
+                    style="display: none;">
+                    OSTRICH
+                </button>
+            </div>
+            <div id="books">
+                <div id="toprow">
+
+                    <div class="flip-book">
+                        <div class="flip-book-inner">
+                            <div class="flip-book-front" id="book1">
+                                <img src="./images/eddies-bastard-kowalski.jpeg" alt="Eddie's Bastard">
+                            </div>
+                            <div class="flip-book-back">
+                                <h1>1999</h1> 
+                                <p>HarperCollins Publishers</p> 
+                                <p>Read this book to learn about the Fiasco of the Ostriches, and other wondrous things.</p>
+                                <p><a href="https://www.amazon.com/gp/product/0061098256/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0061098256&linkCode=as2&tag=williamkowa02-20&linkId=RDMF54TEKIWIL5IC">Buy on Amazon</a></p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="flip-book">
+                        <div class="flip-book-inner">
+                            <div class="flip-book-front" id="book2">
+                                <img src="./images/somewhere-south-of-here-kowalski.jpeg" alt="somewhere south of here kowalski">
+                            </div>
+                            <div class="flip-book-back">
+                                <h1>2001</h1> 
+                                <p>HarperCollins Publishers</p> 
+                                <p><a href="https://www.amazon.com/gp/product/0060084375/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0060084375&linkCode=as2&tag=williamkowa02-20&linkId=ISMR4RQ5NRBZSFCP">Buy on Amazon.</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-book">
+                        <div class="flip-book-inner">
+                            <div class="flip-book-front" id="book">
+                                <img src="./images/Flash.jpeg" alt="the adventures of flash jackson kowalski">
+                            </div>
+                            <div class="flip-book-back">
+                                <h1>2003</h1> 
+                                <p>HarperCollins Publishers</p> 
+                                <p><a href="https://www.amazon.com/gp/product/B002BD2UY8/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B002BD2UY8&linkCode=as2&tag=williamkowa02-20&linkId=C2N34I7GIIWQUMEM">Buy on Amazon.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="bottomrow">
+                    <div class="flip-book">
+                        <div class="flip-book-inner">
+                            <div class="flip-book-front" id="book">
+                                <img src="./images/The-Good-Neighbor-Kowalski.jpeg" alt="">
+                            </div>
+                            <div class="flip-book-back">
+                                <h1>2004</h1> 
+                                <p>HarperCollins Publishers</p> 
+                                <p><a href="https://www.amazon.com/gp/product/0060936258/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0060936258&linkCode=as2&tag=williamkowa02-20&linkId=4FNAO3WBAMIQLPZW">Buy on Amazon.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-book">
+                        <div class="flip-book-inner">
+                            <div class="flip-book-front" id="book">
+                                <img src="./images/Hundred-Hearts-Kowalski.jpeg" alt="">
+                            </div>
+                            <div class="flip-book-back">
+                                <h1>2013</h1> 
+                                <p>Thomas Allen Publishers</p> 
+                                <p><a href="https://www.amazon.com/gp/product/1499578946">Buy on Amazon.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-book">
+                        <div class="flip-book-inner">
+                            <div class="flip-book-front" id="book">
+                                <img src="./images/Best-Polish-Restaurant-Buffalo-Kowalski.jpg" alt="">
+                            </div>
+                            <div class="flip-book-back">
+                                <h1>2017</h1> 
+                                <p>Orchard Street Books</p> 
+                                <p><a href="https://www.amazon.com/Best-Polish-Restaurant-Buffalo/dp/0995894302">Buy on Amazon.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+          
+        </div>
+        <div id="ostrich">
+            <img src="./images/ostrich-400h.png" />
+        </div>
+       
+    </div>
+</body>
+<script src="main.js"></script>
+<script src="RON.js"></script>
+
+</html>
