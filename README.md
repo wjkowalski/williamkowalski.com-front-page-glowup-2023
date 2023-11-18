@@ -1,2 +1,2 @@
 # williamkowalski.com-front-page-glowup-2023
-My site has been on WP for many years. I've redesigned just the front page in naked HTML/CSS/JS. Includes popup ostrich.
+My site has been on WP for many years. I'm interested in moving away from WP now in cases where it's not specifically needed, so I've redesigned the front page in naked HTML/CSS/JS. Nothing very special. Has two features that you might like: HTML/CSS cards that flip on hover, and a button that triggers a JS function that makes an ostrich head pop up at the bottom of the screen.
